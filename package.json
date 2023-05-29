@@ -1,0 +1,23 @@
+{
+  "name": "@luxass/renovate-config",
+  "version": "0.2.0",
+  "packageManager": "pnpm@8.3.1",
+  "description": "A basic preset for Renovate",
+  "license": "MIT",
+  "homepage": "https://github.com/luxass/renovate-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luxass/renovate-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/luxass/renovate-config/issues"
+  },
+  "scripts": {
+    "prepare": "renovate-config-validator"
+  },
+  "devDependencies": {
+    "@luxass/eslint-config": "^3.2.0",
+    "eslint": "^8.41.0",
+    "renovate": "latest"
+  }
+}
