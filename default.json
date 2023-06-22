@@ -1,15 +1,21 @@
 {
+
   "description": "Default config for luxass' projects",
   "extends": [
     "config:base",
     ":preserveSemverRanges",
-    "schedule:weekly",
     "group:allNonMajor",
     ":semanticCommitTypeAll(chore)"
   ],
+  "schedule": [
+    "after 6pm every weekday",
+    "before 8am every weekday",
+    "every weekend"
+  ],
   "rangeStrategy": "bump",
   "npm": {
-    "commitMessageTopic": "{{prettyDepType}} {{depName}}"
+    "commitMessageTopic": "{{prettyDepType}} {{depName}}",
+    "minimumReleaseAge": "3 days"
   },
   "packageRules": [
     {
@@ -18,5 +24,8 @@
       ],
       "enabled": false
     }
+  ],
+  "labels": [
+    "dependencies"
   ]
 }
