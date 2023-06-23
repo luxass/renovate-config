@@ -1,5 +1,5 @@
 {
-
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Default config for luxass' projects",
   "extends": [
     "config:base",
@@ -27,5 +27,11 @@
   ],
   "labels": [
     "dependencies"
+  ],
+  "assignees": [
+    "luxass"
+  ],
+  "reviewers": [
+    "luxass"
   ]
 }
