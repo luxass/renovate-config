@@ -13,6 +13,9 @@
     "every weekend"
   ],
   "rangeStrategy": "bump",
+  "automerge": true,
+	"internalChecksFilter": "strict",
+  "automergeStrategy": "squash",
   "npm": {
     "commitMessageTopic": "{{prettyDepType}} {{depName}}",
     "minimumReleaseAge": "3 days"
