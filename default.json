@@ -14,7 +14,7 @@
   ],
   "rangeStrategy": "bump",
   "automerge": true,
-	"internalChecksFilter": "strict",
+  "internalChecksFilter": "strict",
   "automergeStrategy": "squash",
   "npm": {
     "commitMessageTopic": "{{prettyDepType}} {{depName}}",
@@ -33,5 +33,8 @@
   ],
   "assignees": [
     "luxass"
-  ]
+  ],
+  "major": {
+    "dependencyDashboardApproval": true,
+  }
 }
