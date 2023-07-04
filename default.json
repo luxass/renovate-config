@@ -13,7 +13,7 @@
     "every weekend"
   ],
   "rangeStrategy": "bump",
-  "automerge": true,
+  "automerge": false,
   "internalChecksFilter": "strict",
   "automergeStrategy": "squash",
   "npm": {
