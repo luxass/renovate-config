@@ -12,11 +12,6 @@ Add this into `renovate.json`:
 }
 ```
 
-## Useful Links
-
-- [Configuration Options](https://renovatebot.com/docs/configuration-options)
-- [Renovate Presets](https://docs.renovatebot.com/config-presets/)
-
 ## License
 
 MIT
