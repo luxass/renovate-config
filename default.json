@@ -3,6 +3,8 @@
   "description": "Default config for luxass' projects",
   "extends": [
     "config:base",
+    ":disablePeerDependencies",
+    ":disableDependencyDashboard",
     ":preserveSemverRanges",
     "group:allNonMajor",
     ":semanticCommitTypeAll(chore)"
@@ -35,6 +37,6 @@
     "luxass"
   ],
   "major": {
-    "dependencyDashboardApproval": true,
+    "dependencyDashboardApproval": true
   }
 }
