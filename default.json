@@ -28,6 +28,14 @@
         "peerDependencies"
       ],
       "enabled": false
+    },
+    {
+      "depTypeList": [
+        "packageManager"
+      ],
+      "schedule": [
+        "every weekend"
+      ]
     }
   ],
   "labels": [
