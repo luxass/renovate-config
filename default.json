@@ -34,7 +34,7 @@
         "packageManager"
       ],
       "schedule": [
-        "every weekend"
+        "on the last day of the month"
       ]
     }
   ],
