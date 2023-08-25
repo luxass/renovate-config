@@ -1,6 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Default config for luxass' projects",
+  "timezone": "Europe/Copenhagen",
   "extends": [
     "config:base",
     ":disablePeerDependencies",
@@ -34,7 +35,7 @@
         "packageManager"
       ],
       "schedule": [
-        "on the last day of the month"
+        "every weekend"
       ]
     }
   ],
@@ -43,8 +44,5 @@
   ],
   "assignees": [
     "luxass"
-  ],
-  "major": {
-    "dependencyDashboardApproval": true
-  }
+  ]
 }
