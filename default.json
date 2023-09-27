@@ -35,14 +35,11 @@
         "packageManager"
       ],
       "schedule": [
-        "every weekend"
+        "every 3 months on the first day of the month"
       ]
     }
   ],
   "labels": [
     "dependencies"
-  ],
-  "assignees": [
-    "luxass"
   ]
 }
