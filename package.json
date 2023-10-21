@@ -2,7 +2,7 @@
   "name": "@luxass/renovate-config",
   "type": "module",
   "version": "0.2.0",
-  "packageManager": "pnpm@8.7.1",
+  "packageManager": "pnpm@8.9.2",
   "description": "A basic preset for Renovate",
   "license": "MIT",
   "homepage": "https://github.com/luxass/renovate-config",
