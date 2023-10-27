@@ -3,7 +3,7 @@
   "description": "Default config for luxass' projects",
   "timezone": "Europe/Copenhagen",
   "extends": [
-    "config:base",
+    "config:recommended",
     ":disablePeerDependencies",
     ":disableDependencyDashboard",
     ":preserveSemverRanges",
@@ -29,13 +29,13 @@
   },
   "packageRules": [
     {
-      "depTypeList": [
+      "matchDepTypes": [
         "peerDependencies"
       ],
       "enabled": false
     },
     {
-      "depTypeList": [
+      "matchDepTypes": [
         "packageManager"
       ],
       "schedule": [
