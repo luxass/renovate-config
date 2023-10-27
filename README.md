@@ -2,16 +2,20 @@
 
 Personal preset for [Renovate](https://github.com/renovatebot/renovate).
 
-## Usage
+## 📚 Usage
 
-Add this into `renovate.json`:
+Add this into `renovate.json` or `.github/renovate.json`:
 
-```json
+```jsonc
+// .github/renovate.json
 {
-  "extends": ["github>luxass/renovate-config"]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>luxass/renovate-config"
+  ]
 }
 ```
 
-## License
+## 📄 License
 
-MIT
+Published under [MIT License](./LICENSE).
