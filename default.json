@@ -15,13 +15,17 @@
     "before 8am every weekday",
     "every weekend"
   ],
+  "rebaseWhen": "behind-base-branch",
+  "reviewers": [
+    "luxass"
+  ],
   "rangeStrategy": "bump",
   "automerge": false,
   "internalChecksFilter": "strict",
   "automergeStrategy": "squash",
   "npm": {
     "commitMessageTopic": "{{prettyDepType}} {{depName}}",
-    "minimumReleaseAge": "3 days"
+    "minimumReleaseAge": "5 days"
   },
   "packageRules": [
     {
@@ -35,7 +39,7 @@
         "packageManager"
       ],
       "schedule": [
-        "every 3 months on the first day of the month"
+        "every 2 months on the first day of the month"
       ]
     }
   ],
