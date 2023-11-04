@@ -16,9 +16,6 @@
     "every weekend"
   ],
   "rebaseWhen": "behind-base-branch",
-  "reviewers": [
-    "luxass"
-  ],
   "rangeStrategy": "bump",
   "automerge": false,
   "internalChecksFilter": "strict",
