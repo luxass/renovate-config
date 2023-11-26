@@ -1,7 +1,7 @@
 {
   "name": "@luxass/renovate-config",
   "type": "module",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "packageManager": "bun@1.0.14",
   "description": "A basic preset for Renovate",
   "author": {
@@ -20,7 +20,8 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "validate:renovate": "renovate-config-validator ./default.json --strict"
+    "validate:renovate": "renovate-config-validator ./default.json --strict",
+    "release": "npx bumpp && npx changelogithub"
   },
   "devDependencies": {
     "@luxass/eslint-config": "^4.0.0-beta.8",
