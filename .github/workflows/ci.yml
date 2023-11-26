@@ -19,5 +19,8 @@ jobs:
       - name: Install Dependencies
         run: bun install
 
+      - name: Lint
+        run: bun run lint
+
       - name: Validate Renovate Config
         run: bun validate:renovate
