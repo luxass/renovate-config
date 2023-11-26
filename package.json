@@ -1,8 +1,14 @@
 {
   "name": "@luxass/renovate-config",
   "type": "module",
+  "version": "1.0.0",
   "packageManager": "bun@1.0.14",
   "description": "A basic preset for Renovate",
+  "author": {
+    "name": "Lucas Nørgård",
+    "email": "lucasnrgaard@gmail.com",
+    "url": "https://luxass.dev"
+  },
   "license": "MIT",
   "homepage": "https://github.com/luxass/renovate-config",
   "repository": {
