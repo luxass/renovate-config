@@ -24,6 +24,9 @@
     "commitMessageTopic": "{{prettyDepType}} {{depName}}",
     "minimumReleaseAge": "5 days"
   },
+  "nvm": {
+    "enabled": false
+  },
   "lockFileMaintenance": {
     "enabled": true,
     "schedule": "before 6:00am on the first day of the month"
