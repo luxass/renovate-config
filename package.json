@@ -1,7 +1,7 @@
 {
   "name": "@luxass/renovate-config",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "packageManager": "bun@1.0.14",
   "description": "A basic preset for Renovate",
   "author": {
