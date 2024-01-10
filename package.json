@@ -1,14 +1,14 @@
 {
   "name": "@luxass/renovate-config",
-  "type": "module",
   "version": "1.0.1",
-  "packageManager": "bun@1.0.14",
   "description": "A basic preset for Renovate",
+  "type": "module",
   "author": {
     "name": "Lucas Nørgård",
     "email": "lucasnrgaard@gmail.com",
     "url": "https://luxass.dev"
   },
+  "packageManager": "pnpm@8.14.1",
   "license": "MIT",
   "homepage": "https://github.com/luxass/renovate-config",
   "repository": {
@@ -24,8 +24,8 @@
     "release": "npx bumpp && npx changelogithub"
   },
   "devDependencies": {
-    "@luxass/eslint-config": "^4.0.0-beta.8",
-    "eslint": "^8.54.0",
+    "@luxass/eslint-config": "^4.1.0",
+    "eslint": "^8.56.0",
     "renovate": "latest"
   }
 }
