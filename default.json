@@ -27,6 +27,11 @@
       "groupName": "github-actions",
       "matchManagers": [
         "github-actions"
+      ],
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "patch"
       ]
     },
     {
