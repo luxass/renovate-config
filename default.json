@@ -24,12 +24,14 @@
   "packageRules": [
     {
       "groupName": "github-actions",
-      "extends": [
-        "helpers:pinGitHubActionDigestsToSemver"
-      ],
+      "extractVersion": "^(?<version>v\\d+\\.\\d+\\.\\d+)$",
+      "versioning": "regex:^v?(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$",
       "pinDigests": false,
       "matchManagers": [
         "github-actions"
+      ],
+      "matchDepTypes": [
+        "action"
       ],
       "matchUpdateTypes": [
         "major",
