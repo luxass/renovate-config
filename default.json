@@ -31,12 +31,6 @@
       ],
       "matchDepTypes": [
         "action"
-      ],
-      "matchUpdateTypes": [
-        "major",
-        "minor",
-        "patch",
-        "pin"
       ]
     },
     {
