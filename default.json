@@ -27,6 +27,7 @@
       "extends": [
         "helpers:pinGitHubActionDigestsToSemver"
       ],
+      "pinDigests": false,
       "matchManagers": [
         "github-actions"
       ],
