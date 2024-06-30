@@ -66,6 +66,10 @@
         "^@vitest/"
       ],
       "groupName": "test packages"
+    },
+    {
+      "matchDepTypes": ["engines"],
+      "enabled": true
     }
   ]
 }
