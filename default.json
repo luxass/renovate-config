@@ -50,7 +50,14 @@
       "extends": [
         "packages:linters"
       ],
-      "groupName": "all linters"
+      "matchPackageNames": [
+        "@luxass/eslint-config",
+        "astro-eslint-parser",
+        "prettier-plugin-astro",
+        "@eslint-react/eslint-plugin",
+        "@unocss/eslint-plugin"
+      ],
+      "groupName": "linters"
     },
     {
       "extends": [
