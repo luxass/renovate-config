@@ -47,7 +47,9 @@
       ]
     },
     {
-      "extends": "packages:linters",
+      "extends": [
+        "packages:linters"
+      ],
       "groupName": "all linters"
     },
     {
