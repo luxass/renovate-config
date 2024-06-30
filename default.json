@@ -1,53 +1,69 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Default config for luxass' projects",
+  "description": "The default preset for all luxass' repositories",
   "timezone": "Europe/Copenhagen",
   "extends": [
     "config:recommended",
-    ":disablePeerDependencies",
-    ":disableDependencyDashboard",
-    ":preserveSemverRanges",
-    "group:allNonMajor",
-    ":semanticCommitTypeAll(chore)"
+    ":labels(dependencies)",
+    ":semanticCommits",
+    ":semanticCommitScope(deps)",
+    ":semanticCommitTypeAll(chore)",
+    ":widenPeerDependencies",
+    ":pinDevDependencies",
+    "helpers:pinGitHubActionDigests",
+    ":maintainLockFilesWeekly"
   ],
-  "schedule": [
-    "after 6pm every weekday",
-    "before 8am every weekday",
-    "every weekend"
+  "assignees": [
+    "luxass"
   ],
   "rebaseWhen": "behind-base-branch",
   "rangeStrategy": "bump",
-  "automerge": false,
   "internalChecksFilter": "strict",
-  "automergeStrategy": "squash",
   "npm": {
-    "commitMessageTopic": "{{prettyDepType}} {{depName}}",
-    "minimumReleaseAge": "5 days"
-  },
-  "nvm": {
-    "enabled": false
-  },
-  "lockFileMaintenance": {
-    "enabled": true,
-    "schedule": "before 6:00am on the first day of the month"
+    "commitMessageTopic": "{{prettyDepType}} {{depName}}"
   },
   "packageRules": [
     {
-      "matchDepTypes": [
-        "peerDependencies"
-      ],
-      "enabled": false
+      "groupName": "github-actions",
+      "matchManagers": [
+        "github-actions"
+      ]
     },
     {
       "matchDepTypes": [
-        "packageManager"
+        "dependencies"
       ],
-      "schedule": [
-        "every 4 months on the first day of the month"
+      "rangeStrategy": "update-lockfile"
+    },
+    {
+      "groupName": "vite dependencies",
+      "groupSlug": "vite",
+      "matchPackageNames": [
+        "vite"
+      ],
+      "matchPackagePatterns": [
+        "^@vitejs/",
+        "^vite-"
       ]
+    },
+    {
+      "extends": "packages:linters",
+      "groupName": "all linters"
+    },
+    {
+      "extends": [
+        "packages:test"
+      ],
+      "matchPackageNames": [
+        "c8",
+        "happy-dom",
+        "jsdom",
+        "vitest"
+      ],
+      "matchPackagePatterns": [
+        "^@vitest/"
+      ],
+      "groupName": "test packages"
     }
-  ],
-  "labels": [
-    "dependencies"
   ]
 }
