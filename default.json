@@ -9,7 +9,6 @@
     ":semanticCommitScope(deps)",
     ":semanticCommitTypeAll(chore)",
     ":widenPeerDependencies",
-    ":pinDevDependencies",
     "helpers:pinGitHubActionDigestsToSemver",
     ":maintainLockFilesWeekly"
   ],
