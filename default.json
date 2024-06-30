@@ -9,7 +9,6 @@
     ":semanticCommitScope(deps)",
     ":semanticCommitTypeAll(chore)",
     ":widenPeerDependencies",
-    "helpers:pinGitHubActionDigestsToSemver",
     ":maintainLockFilesWeekly"
   ],
   "prHourlyLimit": 0,
@@ -25,6 +24,9 @@
   "packageRules": [
     {
       "groupName": "github-actions",
+      "extends": [
+        "helpers:pinGitHubActionDigestsToSemver"
+      ],
       "matchManagers": [
         "github-actions"
       ],
