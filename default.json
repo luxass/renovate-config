@@ -13,6 +13,7 @@
     "helpers:pinGitHubActionDigests",
     ":maintainLockFilesWeekly"
   ],
+  "prHourlyLimit": 0,
   "assignees": [
     "luxass"
   ],
