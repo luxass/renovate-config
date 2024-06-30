@@ -10,7 +10,7 @@
     ":semanticCommitTypeAll(chore)",
     ":widenPeerDependencies",
     ":pinDevDependencies",
-    "helpers:pinGitHubActionDigests",
+    "helpers:pinGitHubActionDigestsToSemver",
     ":maintainLockFilesWeekly"
   ],
   "prHourlyLimit": 0,
