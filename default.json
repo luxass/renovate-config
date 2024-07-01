@@ -9,7 +9,7 @@
     ":semanticCommitScope(deps)",
     ":semanticCommitTypeAll(chore)",
     ":widenPeerDependencies",
-    ":maintainLockFilesWeekly"
+    ":maintainLockFilesMonthly"
   ],
   "prHourlyLimit": 0,
   "assignees": [
