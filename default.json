@@ -19,7 +19,8 @@
   "rangeStrategy": "bump",
   "internalChecksFilter": "strict",
   "npm": {
-    "commitMessageTopic": "{{prettyDepType}} {{depName}}"
+    "commitMessageTopic": "{{prettyDepType}} {{depName}}",
+    "minimumReleaseAge": "5 days"
   },
   "packageRules": [
     {
