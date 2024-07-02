@@ -81,6 +81,14 @@
     {
       "matchDepTypes": ["engines"],
       "enabled": false
+    },
+    {
+      "matchDepTypes": [
+        "packageManager"
+      ],
+      "schedule": [
+        "every 4 months on the first day of the month"
+      ]
     }
   ]
 }
