@@ -11,6 +11,11 @@
     ":widenPeerDependencies",
     ":maintainLockFilesMonthly"
   ],
+  "schedule": [
+    "after 6pm every weekday",
+    "before 8am every weekday",
+    "every weekend"
+  ],
   "assignees": [
     "luxass"
   ],
