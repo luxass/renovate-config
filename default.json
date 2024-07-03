@@ -11,6 +11,9 @@
     ":widenPeerDependencies",
     ":maintainLockFilesMonthly"
   ],
+  "lockFileMaintenance": {
+    "automerge": true
+  },
   "schedule": [
     "after 6pm every weekday",
     "before 8am every weekday",
@@ -19,13 +22,13 @@
   "assignees": [
     "luxass"
   ],
-  "rebaseWhen": "behind-base-branch",
+  "rebaseWhen": "conflicted",
   "rangeStrategy": "bump",
   "internalChecksFilter": "strict",
   "npm": {
-    "commitMessageTopic": "{{prettyDepType}} {{depName}}",
-    "minimumReleaseAge": "5 days"
+    "commitMessageTopic": "{{prettyDepType}} {{depName}}"
   },
+  "minimumReleaseAge": "7 days",
   "packageRules": [
     {
       "groupName": "github actions",
@@ -95,5 +98,6 @@
         "every 4 months on the first day of the month"
       ]
     }
-  ]
+  ],
+  "postUpdateOptions": ["pnpmDedupe"]
 }
