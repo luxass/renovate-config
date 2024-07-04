@@ -99,5 +99,6 @@
       ]
     }
   ],
-  "postUpdateOptions": ["pnpmDedupe"]
+  "postUpdateOptions": ["pnpmDedupe"],
+  "prCreation": "not-pending"
 }
