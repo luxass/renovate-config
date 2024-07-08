@@ -28,7 +28,6 @@
   "npm": {
     "commitMessageTopic": "{{prettyDepType}} {{depName}}"
   },
-  "minimumReleaseAge": "7 days",
   "packageRules": [
     {
       "groupName": "github actions",
@@ -99,6 +98,5 @@
       ]
     }
   ],
-  "postUpdateOptions": ["pnpmDedupe"],
-  "prCreation": "not-pending"
+  "postUpdateOptions": ["pnpmDedupe"]
 }
