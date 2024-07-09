@@ -15,9 +15,7 @@
     "automerge": true
   },
   "schedule": [
-    "after 6pm every weekday",
-    "before 8am every weekday",
-    "every weekend"
+    "before 8am on wednesday"
   ],
   "assignees": [
     "luxass"
@@ -95,8 +93,10 @@
       ],
       "schedule": [
         "every 4 months on the first day of the month"
-      ]
+      ],
+      "automerge": true
     }
   ],
-  "postUpdateOptions": ["pnpmDedupe"]
+  "postUpdateOptions": ["pnpmDedupe"],
+  "minimumReleaseAge": "3 days"
 }
