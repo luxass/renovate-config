@@ -122,5 +122,6 @@
   "minimumReleaseAge": "3 days",
   "automergeStrategy": "squash",
   "automergeType": "branch",
-  "prCreation": "not-pending"
+  "prCreation": "not-pending",
+  "printConfig": true
 }
