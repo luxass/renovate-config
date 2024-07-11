@@ -11,6 +11,7 @@
     ":disableDependencyDashboard",
     ":disablePeerDependencies"
   ],
+  "prHourlyLimit": 0,
   "lockFileMaintenance": {
     "automerge": true,
     "schedule": [
@@ -118,5 +119,6 @@
     }
   ],
   "postUpdateOptions": ["pnpmDedupe"],
-  "minimumReleaseAge": "3 days"
+  "minimumReleaseAge": "3 days",
+  "automergeStrategy": "squash"
 }
