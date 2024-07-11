@@ -99,9 +99,9 @@
       "automerge": true
     },
     {
-      "description": ["automerge minor updates in devDeps"],
+      "description": ["automerge minor & patch updates in devDeps"],
       "automerge": true,
-      "matchUpdateTypes": ["minor"],
+      "matchUpdateTypes": ["minor", "patch"],
       "matchDepTypes": ["devDependencies"]
     },
     {
