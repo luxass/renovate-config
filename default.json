@@ -8,11 +8,14 @@
     ":semanticCommits",
     ":semanticCommitScope(deps)",
     ":semanticCommitTypeAll(chore)",
-    ":widenPeerDependencies",
-    ":maintainLockFilesMonthly"
+    ":disableDependencyDashboard",
+    ":disablePeerDependencies"
   ],
   "lockFileMaintenance": {
-    "automerge": true
+    "automerge": true,
+    "schedule": [
+      "before 4am on the first day of the month"
+    ]
   },
   "schedule": [
     "before 8am on wednesday"
@@ -20,10 +23,14 @@
   "assignees": [
     "luxass"
   ],
-  "rebaseWhen": "conflicted",
-  "rangeStrategy": "bump",
   "internalChecksFilter": "strict",
   "npm": {
+    "extends": [
+      ":automergePatch",
+      ":noUnscheduledUpdates",
+      ":separatePatchReleases",
+      "helpers:disableTypesNodeMajor"
+    ],
     "commitMessageTopic": "{{prettyDepType}} {{depName}}"
   },
   "packageRules": [
@@ -37,12 +44,6 @@
       "matchDepTypes": [
         "action"
       ]
-    },
-    {
-      "matchDepTypes": [
-        "dependencies"
-      ],
-      "rangeStrategy": "update-lockfile"
     },
     {
       "groupName": "vite dependencies",
@@ -60,7 +61,6 @@
         "packages:linters"
       ],
       "matchPackageNames": [
-        "@luxass/eslint-config",
         "astro-eslint-parser",
         "prettier-plugin-astro",
         "@eslint-react/eslint-plugin",
@@ -84,6 +84,7 @@
       "groupName": "test packages"
     },
     {
+      "description": ["disable package.json > engines update"],
       "matchDepTypes": ["engines"],
       "enabled": false
     },
@@ -95,6 +96,19 @@
         "every 4 months on the first day of the month"
       ],
       "automerge": true
+    },
+    {
+      "description": ["automerge minor updates in devDeps"],
+      "automerge": true,
+      "matchUpdateTypes": ["minor"],
+      "matchDepTypes": ["devDependencies"]
+    },
+    {
+      "schedule": "at any time",
+      "minimumReleaseAge": "0",
+      "matchPackageNames": [
+        "@luxass/eslint-config"
+      ]
     }
   ],
   "postUpdateOptions": ["pnpmDedupe"],
