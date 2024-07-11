@@ -104,6 +104,12 @@
       "matchDepTypes": ["devDependencies"]
     },
     {
+      "description": ["automerge patch updates in actions"],
+      "automerge": true,
+      "matchUpdateTypes": ["patch"],
+      "matchDepTypes": ["action"]
+    },
+    {
       "schedule": "at any time",
       "minimumReleaseAge": "0",
       "matchPackageNames": [
