@@ -11,7 +11,6 @@
     ":disableDependencyDashboard",
     ":disablePeerDependencies"
   ],
-  "prHourlyLimit": 0,
   "lockFileMaintenance": {
     "automerge": true,
     "schedule": [
