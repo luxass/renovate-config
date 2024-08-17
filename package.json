@@ -8,7 +8,7 @@
     "email": "lucasnrgaard@gmail.com",
     "url": "https://luxass.dev"
   },
-  "packageManager": "pnpm@9.4.0",
+  "packageManager": "pnpm@9.7.1",
   "license": "MIT",
   "homepage": "https://github.com/luxass/renovate-config",
   "repository": {
@@ -24,8 +24,8 @@
     "release": "npx bumpp && npx changelogithub"
   },
   "devDependencies": {
-    "@luxass/eslint-config": "^4.8.3",
-    "eslint": "^9.6.0",
+    "@luxass/eslint-config": "^4.11.0",
+    "eslint": "^9.9.0",
     "renovate": "latest"
   }
 }
