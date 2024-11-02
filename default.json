@@ -13,16 +13,9 @@
   ],
   "lockFileMaintenance": {
     "automerge": true,
-    "schedule": [
-      "before 4am on the first day of the month"
-    ]
+    "schedule": ["before 4am on the first day of the month"]
   },
-  "schedule": [
-    "before 8am on wednesday"
-  ],
-  "assignees": [
-    "luxass"
-  ],
+  "assignees": ["luxass"],
   "internalChecksFilter": "strict",
   "npm": {
     "extends": [
@@ -38,28 +31,17 @@
       "groupName": "github actions",
       "extractVersion": "^(?<version>v\\d+\\.\\d+\\.\\d+)$",
       "versioning": "regex:^v?(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$",
-      "matchManagers": [
-        "github-actions"
-      ],
-      "matchDepTypes": [
-        "action"
-      ]
+      "matchManagers": ["github-actions"],
+      "matchDepTypes": ["action"]
     },
     {
       "groupName": "vite dependencies",
       "groupSlug": "vite",
-      "matchPackageNames": [
-        "vite"
-      ],
-      "matchPackagePatterns": [
-        "^@vitejs/",
-        "^vite-"
-      ]
+      "matchPackageNames": ["vite"],
+      "matchPackagePatterns": ["^@vitejs/", "^vite-"]
     },
     {
-      "extends": [
-        "packages:linters"
-      ],
+      "extends": ["packages:linters"],
       "matchPackageNames": [
         "astro-eslint-parser",
         "prettier-plugin-astro",
@@ -69,18 +51,9 @@
       "groupName": "linters"
     },
     {
-      "extends": [
-        "packages:test"
-      ],
-      "matchPackageNames": [
-        "c8",
-        "happy-dom",
-        "jsdom",
-        "vitest"
-      ],
-      "matchPackagePatterns": [
-        "^@vitest/"
-      ],
+      "extends": ["packages:test"],
+      "matchPackageNames": ["c8", "happy-dom", "jsdom", "vitest"],
+      "matchPackagePatterns": ["^@vitest/"],
       "groupName": "test packages"
     },
     {
@@ -89,38 +62,14 @@
       "enabled": false
     },
     {
-      "matchDepTypes": [
-        "packageManager"
-      ],
-      "schedule": [
-        "every 4 months on the first day of the month"
-      ],
+      "matchDepTypes": ["packageManager"],
+      "schedule": ["every 4 months on the first day of the month"],
       "automerge": true
-    },
-    {
-      "description": ["automerge minor & patch updates in devDeps"],
-      "automerge": true,
-      "matchUpdateTypes": ["minor", "patch"],
-      "matchDepTypes": ["devDependencies"]
-    },
-    {
-      "description": ["automerge patch updates in actions"],
-      "automerge": true,
-      "matchUpdateTypes": ["patch"],
-      "matchDepTypes": ["action"]
-    },
-    {
-      "schedule": "at any time",
-      "minimumReleaseAge": "0",
-      "matchPackageNames": [
-        "@luxass/eslint-config"
-      ]
     }
   ],
   "postUpdateOptions": ["pnpmDedupe"],
   "minimumReleaseAge": "3 days",
   "automergeStrategy": "squash",
   "automergeType": "branch",
-  "prCreation": "not-pending",
   "printConfig": true
 }
