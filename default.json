@@ -9,7 +9,9 @@
     ":semanticCommitScope(deps)",
     ":semanticCommitTypeAll(chore)",
     ":disableDependencyDashboard",
-    ":disablePeerDependencies"
+    ":disablePeerDependencies",
+    "group:allNonMajor",
+    "schedule:weekly"
   ],
   "lockFileMaintenance": {
     "automerge": true,
@@ -18,12 +20,6 @@
   "assignees": ["luxass"],
   "internalChecksFilter": "strict",
   "npm": {
-    "extends": [
-      ":automergePatch",
-      ":noUnscheduledUpdates",
-      ":separatePatchReleases",
-      "helpers:disableTypesNodeMajor"
-    ],
     "commitMessageTopic": "{{prettyDepType}} {{depName}}"
   },
   "packageRules": [
