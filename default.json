@@ -4,6 +4,7 @@
   "timezone": "Europe/Copenhagen",
   "extends": [
     "config:recommended",
+    "helpers:pinGithubActionDigest",
     ":labels(dependencies)",
     ":semanticCommits",
     ":semanticCommitScope(deps)",
