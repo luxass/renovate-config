@@ -17,6 +17,10 @@
     "automerge": true,
     "schedule": ["before 4am on the first day of the month"]
   },
+  "suppressNotifications": [
+    "prIgnoreNotification"
+  ],
+  "prCreation": "not-pending",
   "vulnerabilityAlerts": {
     "labels": ["security"],
     "reviewers": [
