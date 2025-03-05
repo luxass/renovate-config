@@ -44,7 +44,8 @@
         "@eslint-react/eslint-plugin",
         "@unocss/eslint-plugin"
       ],
-      "groupName": "linters"
+      "groupName": "linters",
+      "minimumReleaseAge": "14 days"
     },
     {
       "extends": ["packages:test"],
