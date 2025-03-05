@@ -8,7 +8,7 @@
     "email": "lucasnrgaard@gmail.com",
     "url": "https://luxass.dev"
   },
-  "packageManager": "pnpm@10.2.1",
+  "packageManager": "pnpm@10.5.2",
   "license": "MIT",
   "homepage": "https://github.com/luxass/renovate-config",
   "repository": {
@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@luxass/eslint-config": "^4.15.0",
-    "eslint": "^9.20.0",
+    "eslint": "^9.21.0",
     "renovate": "latest"
   }
 }
