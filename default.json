@@ -17,11 +17,6 @@
     "automerge": true,
     "schedule": ["before 4am on the first day of the month"]
   },
-  "schedule": [
-    "after 6pm every weekday",
-    "before 8am every weekday",
-    "every weekend"
-  ],
   "internalChecksFilter": "strict",
   "npm": {
     "commitMessageTopic": "{{prettyDepType}} {{depName}}"
