@@ -21,9 +21,9 @@
     "labels": ["security"],
     "reviewers": [
       "luxass"
-    ],
-    "automerge": true
+    ]
   },
+  "osvVulnerabilityAlerts": true,
   "internalChecksFilter": "strict",
   "npm": {
     "commitMessageTopic": "{{prettyDepType}} {{depName}}"
