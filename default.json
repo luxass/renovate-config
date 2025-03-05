@@ -22,7 +22,6 @@
     "before 8am every weekday",
     "every weekend"
   ],
-  "assignees": ["luxass"],
   "internalChecksFilter": "strict",
   "npm": {
     "commitMessageTopic": "{{prettyDepType}} {{depName}}"
