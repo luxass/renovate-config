@@ -10,8 +10,7 @@
     ":semanticCommitTypeAll(chore)",
     ":disableDependencyDashboard",
     ":disablePeerDependencies",
-    "group:allNonMajor",
-    "schedule:weekly"
+    "group:allNonMajor"
   ],
   "lockFileMaintenance": {
     "automerge": true,
@@ -76,7 +75,6 @@
     }
   ],
   "postUpdateOptions": ["pnpmDedupe"],
-  "minimumReleaseAge": "7 days",
   "automergeStrategy": "squash",
   "automergeType": "branch"
 }
