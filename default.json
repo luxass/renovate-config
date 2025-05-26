@@ -76,5 +76,6 @@
   ],
   "postUpdateOptions": ["pnpmDedupe"],
   "automergeStrategy": "squash",
+  "minimumReleaseAge": "7 days",
   "automergeType": "branch"
 }
