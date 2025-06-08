@@ -70,12 +70,15 @@
     },
     {
       "matchDepTypes": ["packageManager"],
-      "schedule": ["every 1 month on the first day of the month"],
+      "schedule": ["* * 1 * *"],
       "automerge": true
+    },
+    {
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "7 days"
     }
   ],
   "postUpdateOptions": ["pnpmDedupe"],
   "automergeStrategy": "squash",
-  "minimumReleaseAge": "7 days",
   "automergeType": "branch"
 }
