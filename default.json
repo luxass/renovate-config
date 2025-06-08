@@ -55,7 +55,7 @@
         "@unocss/eslint-plugin"
       ],
       "groupName": "linters",
-      "minimumReleaseAge": "14 days"
+      "schedule": ["* * 1 * *"]
     },
     {
       "extends": ["packages:test"],
