@@ -56,7 +56,7 @@
         "@unocss/eslint-plugin"
       ],
       "groupName": "linters",
-      "schedule": ["0 0 1 * *"]
+      "schedule": ["* * 1 * *"]
     },
     {
       "extends": ["packages:test"],
