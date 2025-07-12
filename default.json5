@@ -65,6 +65,15 @@
       "groupName": "test packages"
     },
     {
+      // Some actions are updated very often, so we update them every 2 weeks
+      // to prevent too many PRs.
+      "matchPackageNames": [
+        "taiki-e/install-action"
+      ],
+      "schedule": ["0 0 */15 * *"],
+      "description": "slow down updates for some actions"
+    },
+    {
       "description": ["disable package.json > engines update"],
       "matchDepTypes": ["engines"],
       "enabled": false
