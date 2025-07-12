@@ -65,8 +65,6 @@
       "groupName": "test packages"
     },
     {
-      // Some actions are updated very often, so we update them every 2 weeks
-      // to prevent too many PRs.
       "matchPackageNames": [
         "taiki-e/install-action"
       ],
