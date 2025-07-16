@@ -68,7 +68,7 @@
       "matchPackageNames": [
         "taiki-e/install-action"
       ],
-      "schedule": ["0 0 */15 * *"],
+      "schedule": ["0 * */15 * *"],
       "description": "slow down updates for some actions"
     },
     {
