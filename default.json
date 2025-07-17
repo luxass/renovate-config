@@ -39,7 +39,7 @@
       "pinDigests": true,
       "matchManagers": ["github-actions"],
       "matchDepTypes": ["action"],
-      "schedule": ["0 0 1 * *"]
+      "schedule": ["* 0 1 * *"]
     },
     {
       "groupName": "vite dependencies",
@@ -68,7 +68,7 @@
       "matchPackageNames": [
         "taiki-e/install-action"
       ],
-      "schedule": ["0 * */15 * *"],
+      "schedule": ["* * */15 * *"],
       "description": "slow down updates for some actions"
     },
     {
