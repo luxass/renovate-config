@@ -29,17 +29,29 @@
   "osvVulnerabilityAlerts": true,
   "internalChecksFilter": "strict",
   "npm": {
-    "commitMessageTopic": "{{prettyDepType}} {{depName}}"
+    "commitMessageTopic": "{{prettyDepType}} {{depName}}",
+    "minimumReleaseAge": "7 days",
+    "rangeStrategy": "pin"
+  },
+  "github-actions": {
+    "extractVersion": "^(?<version>v\\d+\\.\\d+\\.\\d+)$",
+    "versioning": "regex:^v?(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$",
+    "pinDigests": true
   },
   "packageRules": [
     {
+      "description": "monthly github action updates on 1st at midnight",
       "groupName": "github actions",
-      "extractVersion": "^(?<version>v\\d+\\.\\d+\\.\\d+)$",
-      "versioning": "regex:^v?(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$",
-      "pinDigests": true,
       "matchManagers": ["github-actions"],
       "matchDepTypes": ["action"],
       "schedule": ["* 0 1 * *"]
+    },
+    {
+      "description": "slow down updates for specific actions",
+      "matchPackageNames": [
+        "taiki-e/install-action"
+      ],
+      "schedule": ["* * */15 * *"]
     },
     {
       "groupName": "vite dependencies",
@@ -65,13 +77,6 @@
       "groupName": "test packages"
     },
     {
-      "matchPackageNames": [
-        "taiki-e/install-action"
-      ],
-      "schedule": ["* * */15 * *"],
-      "description": "slow down updates for some actions"
-    },
-    {
       "description": ["disable package.json > engines update"],
       "matchDepTypes": ["engines"],
       "enabled": false
@@ -80,10 +85,6 @@
       "matchDepTypes": ["packageManager"],
       "schedule": ["* * 1 * *"],
       "automerge": true
-    },
-    {
-      "matchDatasources": ["npm"],
-      "minimumReleaseAge": "7 days"
     }
   ],
   "postUpdateOptions": ["pnpmDedupe"],
