@@ -56,8 +56,11 @@
     {
       "groupName": "vite dependencies",
       "groupSlug": "vite",
-      "matchPackageNames": ["vite"],
-      "matchPackagePatterns": ["^@vitejs/", "^vite-"]
+      "matchPackageNames": [
+        "vite",
+        "/^@vitejs//",
+        "/^vite-/"
+      ]
     },
     {
       "extends": ["packages:linters"],
@@ -72,8 +75,13 @@
     },
     {
       "extends": ["packages:test"],
-      "matchPackageNames": ["c8", "happy-dom", "jsdom", "vitest"],
-      "matchPackagePatterns": ["^@vitest/"],
+      "matchPackageNames": [
+        "c8",
+        "happy-dom",
+        "jsdom",
+        "vitest",
+        "/^@vitest//"
+      ],
       "groupName": "test packages"
     },
     {
