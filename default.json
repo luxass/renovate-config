@@ -30,8 +30,7 @@
   "internalChecksFilter": "strict",
   "npm": {
     "commitMessageTopic": "{{prettyDepType}} {{depName}}",
-    "minimumReleaseAge": "7 days",
-    "rangeStrategy": "pin"
+    "minimumReleaseAge": "7 days"
   },
   "github-actions": {
     "extractVersion": "^(?<version>v\\d+\\.\\d+\\.\\d+)$",
