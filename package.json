@@ -24,7 +24,7 @@
     "release": "npx bumpp && npx changelogithub"
   },
   "devDependencies": {
-    "@luxass/eslint-config": "6.0.1",
+    "@luxass/eslint-config": "7.2.0",
     "eslint": "9.38.0",
     "renovate": "41.164.1"
   }
