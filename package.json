@@ -26,6 +26,6 @@
   "devDependencies": {
     "@luxass/eslint-config": "6.0.1",
     "eslint": "9.38.0",
-    "renovate": "41.164.1"
+    "renovate": "42.68.5"
   }
 }
