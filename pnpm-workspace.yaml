@@ -1,0 +1,15 @@
+ignoreScripts: true
+catalogMode: prefer
+minimumReleaseAge: 5760
+trustPolicy: "no-downgrade"
+strictDepBuilds: true
+blockExoticSubdeps: true
+
+overrides:
+  semver: 7.7.4
+  "@yarnpkg/libzip": 3.2.1
+
+catalogs:
+  dev:
+    renovate: 43.123.1
+    oxfmt: 0.45.0
