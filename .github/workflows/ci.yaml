@@ -24,7 +24,7 @@ jobs:
           persist-credentials: false
 
       - name: fmt
-        run: pnpm fmt
+        run: pnpm fmt:check
 
       - name: validate renovate config
         run: pnpm validate:renovate
