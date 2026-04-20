@@ -10,9 +10,7 @@ Add this into `renovate.json` or `.github/renovate.json`:
 // .github/renovate.json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "github>luxass/renovate-config"
-  ]
+  "extends": ["github>luxass/renovate-config"],
 }
 ```
 
