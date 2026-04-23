@@ -7,9 +7,9 @@ blockExoticSubdeps: true
 
 overrides:
   semver: 7.7.4
-  "@yarnpkg/libzip": 3.2.1
+  "@yarnpkg/libzip": 3.2.2
 
 catalogs:
   dev:
-    renovate: 43.123.1
+    renovate: 43.123.7
     oxfmt: 0.45.0
