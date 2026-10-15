@@ -2357,6 +2357,7 @@ packages:
   renovate@43.123.1:
     resolution: {integrity: sha512-GFU3qrBkhJieiCYyXMxjkjZ5V0XwhI/bDQ0mHqD5eTTIwNVrSuTwwuPp2Lv49Psp6GWI2HmCvfGrRsI6vUGPHg==}
     engines: {node: ^24.11.0, pnpm: ^10.0.0}
+    deprecated: Renovate versions older than the latest major version are unsupported
     hasBin: true
 
   require-in-the-middle@8.0.1:
