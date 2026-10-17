@@ -11,5 +11,5 @@ overrides:
 
 catalogs:
   dev:
-    renovate: 43.123.1
+    renovate: 44.149.2
     oxfmt: 0.45.0
