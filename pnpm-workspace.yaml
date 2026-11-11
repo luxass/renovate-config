@@ -13,3 +13,6 @@ catalogs:
   dev:
     renovate: 43.123.1
     oxfmt: 0.45.0
+minimumReleaseAgeExclude:
+  # Renovate security update: pnpm@10.34.5
+  - pnpm@10.34.5
