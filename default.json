@@ -43,16 +43,14 @@
   },
   "packageRules": [
     {
-      "description": "monthly github action updates on 1st at midnight",
+      "description": "Group GitHub Actions and reusable workflow updates",
       "groupName": "github actions",
       "matchManagers": [
         "github-actions"
       ],
       "matchDepTypes": [
-        "action"
-      ],
-      "schedule": [
-        "* 0 1 * *"
+        "action",
+        "workflow"
       ]
     },
     {
