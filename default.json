@@ -43,7 +43,7 @@
   },
   "packageRules": [
     {
-      "description": "Group GitHub Actions and reusable workflow updates",
+      "description": "Group GitHub Actions and reusable workflow updates and open PRs before CI runs",
       "groupName": "github actions",
       "matchManagers": [
         "github-actions"
@@ -51,7 +51,8 @@
       "matchDepTypes": [
         "action",
         "workflow"
-      ]
+      ],
+      "prCreation": "immediate"
     },
     {
       "description": "slow down updates for specific actions",
