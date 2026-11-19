@@ -14,6 +14,10 @@ Add this into `renovate.json` or `.github/renovate.json`:
 }
 ```
 
+## Validation
+
+CI runs the Renovate validator in the official Renovate container. You do not need Node.js or pnpm to use or edit the preset.
+
 ## 📄 License
 
 Published under [MIT License](./LICENSE).
