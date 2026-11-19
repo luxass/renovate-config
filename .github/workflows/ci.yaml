@@ -17,14 +17,16 @@ jobs:
     permissions:
       contents: read
     steps:
-      - name: setup
-        uses: luxass/shared-workflows/actions/setup@4e838e75ef8e2f2f71872efb5a84715866a14254 # actions/setup/v0.1.1
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          node-version: lts/*
           persist-credentials: false
 
-      - name: fmt
-        run: pnpm fmt:check
-
-      - name: validate renovate config
-        run: pnpm validate:renovate
+      - name: Validate Renovate configuration
+        run: |
+          set -euo pipefail
+          docker run --rm \
+            --mount "type=bind,source=${GITHUB_WORKSPACE},target=/workspace,readonly" \
+            --workdir /workspace \
+            --entrypoint renovate-config-validator \
+            ghcr.io/renovatebot/renovate:43.123.1@sha256:930b2162f19cd40d9d2e3a4cee341f6a506fdf67d83d25d455657572680bd3f1 \
+            --strict --no-global default.json .github/renovate.json
